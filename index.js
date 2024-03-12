@@ -95,9 +95,9 @@ function uncompress (compressed, maxLength) {
 }
 
 function compress (uncompressed) {
-  if (!isUint8Array(uncompressed) && !isArrayBuffer(uncompressed) && !isBuffer(uncompressed)) {
-    throw new TypeError(TYPE_ERROR_MSG)
-  }
+  //if (!isUint8Array(uncompressed) && !isArrayBuffer(uncompressed) && !isBuffer(uncompressed)) {
+    //throw new TypeError(TYPE_ERROR_MSG)
+  //}
   var uint8Mode = false
   var arrayBufferMode = false
   if (isUint8Array(uncompressed)) {
